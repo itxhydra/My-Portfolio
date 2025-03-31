@@ -240,14 +240,14 @@ span{
 }
 
 .social-btn.linkedin {
-    background-image: url('linkedin.png');
+    background-image: url('images/linkedin.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.artstation {
-    background-image: url('artstation.png');
+    background-image: url('images/artstation.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;

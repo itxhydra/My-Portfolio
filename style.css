@@ -233,21 +233,21 @@ span{
 }
 
 .social-btn.insta {
-    background-image: url('images/insta.png');
-    background-size: 60%;  /* Aap yeh value kam ya zyada kar sakte hain */
+    background-image: url('https://github.com/itxhydra/My-Portfolio/raw/main/images/insta.png');
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.linkedin {
-    background-image: url('images/Linkedin.png');
+    background-image: url('https://github.com/itxhydra/My-Portfolio/raw/main/images/linkedin.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.artstation {
-    background-image: url('images/Artstation.png');
+    background-image: url('https://github.com/itxhydra/My-Portfolio/raw/main/images/artstation.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;

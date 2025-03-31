@@ -233,21 +233,21 @@ span{
 }
 
 .social-btn.insta {
-    background-image: url('../images/insta.png');
+    background-image: url('images/insta.png');
     background-size: 60%;  /* Aap yeh value kam ya zyada kar sakte hain */
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.linkedin {
-    background-image: url('../images/linkedin.png');
+    background-image: url('images/linkedin.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.artstation {
-    background-image: url('../images/artstation.png');
+    background-image: url('images/artstation.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;

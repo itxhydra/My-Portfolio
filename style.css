@@ -240,14 +240,14 @@ span{
 }
 
 .social-btn.linkedin {
-    background-image: url('https://raw.githubusercontent.com/itxhydra/My-Portfolio/main/images/Linkedin.png');
+    background-image: url('Icons/Linkedin.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-btn.artstation {
-    background-image: url('https://raw.githubusercontent.com/itxhydra/My-Portfolio/main/images/artstation.png');
+    background-image: url('Icons/Artstation.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;

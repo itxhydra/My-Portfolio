@@ -17,18 +17,22 @@ html{
 body{
     width: 100%;
     height: 100vh;
+    padding-top: 5rem;
     overflow-x: hidden;
     background-color: black;
     color: white;
 }
 
 header{
-    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    padding: 1rem 9%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 0.2rem 9%;
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
@@ -38,7 +42,7 @@ header{
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #b74b4b;
     font-weight: normal;
     text-decoration: none;
@@ -63,52 +67,60 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
-@media(max-width:995px){
-    nav{
+@media (max-width: 995px) {
+    nav {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
         position: absolute;
         display: none;
+        padding: 0.5rem;
         top: 0;
         right: 0;
         width: 40%;
         border-left: 3px solid #b74b4b;
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 1rem; /* FIXED */
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     }
 
-    nav.active{
+    nav.active {
         display: block;
     }
 
-    nav a{
+    nav a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
 
     nav a:hover,
-    nav a.active{
+    nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
     }
 }
 
-section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
+section {
+    min-height: auto !important;
+    padding: 3rem 9% !important;
 }
 
 /* Home Section */
 .home {
+    height: 100vh;  /* Full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     background-color: black;
     flex-direction: row-reverse;
+    padding-top: 5rem; /* Navigation ke liye thoda space */
+    box-sizing: border-box;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 .home-img img {
@@ -145,7 +157,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 20vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
@@ -213,8 +225,8 @@ span{
     align-items: center; /* Align icons vertically */
     gap: 2rem;
     position: absolute;
-    bottom: 40%; /* Set this to a higher percentage value */
-    left: 54.7%;
+    bottom: 37%; /* Set this to a higher percentage value */
+    left: 48.8%;
     transform: translateX(-50%); /* Center the icons horizontally */
     z-index: 10;
 }
@@ -295,9 +307,12 @@ span{
 
 /* Education Section */
 .education {
-    padding: 5rem 9%;
+    padding: 3rem 9%;
     background-color: #161616;
     color: white;
+    min-height: auto !important; /* Fix extra space issue */
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .section-title {
@@ -310,10 +325,11 @@ span{
 
 /* Education Container for 2 boxes */
 .education-container {
-    display: flex;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
     flex-direction: column; /* Pehle wali degree upar, doosri neeche */
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 0;
 }
 
 
@@ -322,7 +338,7 @@ span{
     background-color: #222222;
     padding: 2rem;
     flex-basis: 48%; /* Makes each box take up 48% of the container */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -341,7 +357,9 @@ span{
 
 /* Portfolio Section */
 .portfolio {
-    padding: 5rem 9%;
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+    padding: 2rem 9%;
     background-color: #161616;
     text-align: center;
 }
@@ -359,33 +377,30 @@ span{
     margin-bottom: 2rem;
 }
 
-
-/* Video Gallery Section */
-.video-gallery {
+.video-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem 0;
+    justify-content: space-between; /* Ensures even spacing */
+    gap: 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .video-item {
-    text-align: center;
-    width: 32%;
+    width: calc(33.33% - 20px); /* 3 videos per row */
+    max-width: 400px; /* Ensure size control */
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .video-item video {
-    width: 100%;
+    width: 100%; /* Make video responsive */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
     cursor: pointer;
     transition: transform 0.3s;
 }
-
 .video-item video:hover {
     transform: scale(1.05);
 }

@@ -10,7 +10,7 @@
 
     <!-- Header Section -->
     <header>
-        <a href="#home" class="logo">Vipin</a>
+        <a href="#home" class="logo">Vipin Sharma</a>
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#portfolio">Portfolio</a>
@@ -23,7 +23,7 @@
     <!-- Hero Section -->
 <section id="home" class="home">
     <div class="home-content">
-        <h1>Hi, I'm <span>Vipin</span></h1>
+        <h1>Hi, I'm <span>Vipin Sharma</span></h1>
         <h3 class="typing-text">I'm a <span class="typing"></span></h3>
         <p>I'm a 3D animator specializing in Maya, focusing on high-quality animation for games and films.</p>
         <div class="social-icons">
@@ -52,39 +52,71 @@
 </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <h2 class="portfolio-title">My Portfolio</h2>
-        <p class="portfolio-description">Some of my best 3D animation work.</p>
-        <div class="video-gallery">
-            <div class="video-item">
-                <video controls><source src="Videos\video1.mp4" type="video/mp4"></video>
-                <p>Thor - 3D Action Animation</p>
-            </div>
-            <div class="video-item">
-                <video controls><source src="video2.mp4" type="video/mp4"></video>
-                <p>Title 2</p>
-            </div>
-            <div class="video-item">
-                <video controls><source src="video3.mp4" type="video/mp4"></video>
-                <p>Title 3</p>
-            </div>
-            <div class="video-item">
-                <video controls><source src="video4.mp4" type="video/mp4"></video>
-                <p>Title 4</p>
-            </div>
-            <div class="video-item">
-                <video controls><source src="video5.mp4" type="video/mp4"></video>
-                <p>Title 5</p>
-            </div>
-            <div class="video-item">
-                <video controls><source src="video6.mp4" type="video/mp4"></video>
-                <p>Title 6</p>
-            </div>
+<section id="portfolio" class="portfolio">
+    <h2 class="portfolio-title">My Portfolio</h2>
+    <p class="portfolio-description">Some of my best 3D animation work.</p>
+    <div class="video-container">
+        <div class="video-item">
+            <video controls poster="thumb1.jpg">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+            <p>Deadpool - 3D Action Animation</p>
         </div>
-        <div class="artstation-link">
-            <a href="https://www.artstation.com/itx_vipinbhardwaj" target="_blank">View More on ArtStation</a>
+        <div class="video-item">
+            <video controls poster="thumb2.jpg">
+                <source src="videos/deadpool-parkour.mp4" type="video/mp4">
+            </video>
+            <p>Deadpool Falls with Style</p>
         </div>
-    </section>
+        <div class="video-item">
+            <video controls poster="thumb3.jpg">
+                <source src="videos/thor.mp4" type="video/mp4">
+            </video>
+            <p>Thor - 3D Action Animation</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb4.jpg">
+                <source src="video4.mp4" type="video/mp4">
+            </video>
+            <p>Video 4</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb5.jpg">
+                <source src="video5.mp4" type="video/mp4">
+            </video>
+            <p>Video 5</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb6.jpg">
+                <source src="video6.mp4" type="video/mp4">
+            </video>
+            <p>Video 6</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb7.jpg">
+                <source src="video7.mp4" type="video/mp4">
+            </video>
+            <p>Video 7</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb8.jpg">
+                <source src="video8.mp4" type="video/mp4">
+            </video>
+            <p>Video 8</p>
+        </div>
+        <div class="video-item">
+            <video controls poster="thumb9.jpg">
+                <source src="video9.mp4" type="video/mp4">
+            </video>
+            <p>Video 9</p>
+        </div>
+    </div>
+    
+    <div class="artstation-link">
+        <a href="https://www.artstation.com/itx_vipinbhardwaj" target="_blank">View More on ArtStation</a>
+    </div>
+</section>
+
 
     <!-- Education Section -->
     <section id="education" class="education">
@@ -125,7 +157,11 @@
                 <img src="after-effects-logo.png" alt="After Effects">
                 <p>After Effects</p>
             </div>
-        </div>
+            <div class="skill-item">
+                <img src="CorelDRAW.png" alt="CorelDRAW Logo">
+                <p>CorelDRAW</p>
+            </div>
+       </div>
     </section>
 
     <!-- Contact Section -->
